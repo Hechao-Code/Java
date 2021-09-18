@@ -19,7 +19,6 @@ public class TestArray09{
 			}
 		}
 		
-		
 		//删除
 		if(index==-1){
 			System.out.println("这里没有你要删除的元素！");
