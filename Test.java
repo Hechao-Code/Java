@@ -1,37 +1,40 @@
-package com.hc;
+package com.hc04;
 
 /**
  * @Auther: HeChao
- * @Date: 2021/9/18 - 09 - 18 - 19:06
- * @Description: com.hc
+ * @Date: 2021/9/19 - 09 - 19 - 16:04
+ * @Description: com.hc04
  * @version: 1.0
  */
 public class Test {
+    //属性
+    int id;
+    static int sid;
+    //空构造器
+    public  Test(){
+
+    }
+
     public static void main(String[] args) {
-        person zs = new person();
-        zs.name = "张三";
-        zs.age = 19;
-        zs.height = 183.2;
-        zs.weight = 170.3;
+        Test s1 = new Test();
+        s1.id = 10;
+        s1.sid = 10;
 
-        person ls = new person();
-        ls.name = "李四";
-        ls.age = 17;
-        ls.height = 179.2;
-        ls.weight = 160.5;
+        Test s2 = new Test();
+        s2.id = 20;
+        s2.sid = 20;
 
-        System.out.println(zs.name);
-        System.out.println(ls.age);
+        Test s3 = new Test();
+        s3.id = 30;
+        s3.sid = 30;
 
-        zs.eat();
-        ls.eat();
+        System.out.println(s1.id);
+        System.out.println(s2.id);
+        System.out.println(s3.id);
 
-        zs.sleep("酒店");
-        ls.sleep("宿舍");
-
-        //String str = zs.introduce();
-        //String stri = ls.introduce();
-        System.out.println(zs.introduce());
-        System.out.println(ls.introduce());
+        System.out.println(s1.sid);
+        System.out.println(s2.sid);
+        System.out.println(s3.sid);
     }
 }
+
