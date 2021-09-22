@@ -1,24 +1,20 @@
-package com.hc.Test06;
+package com.hc.Test09;
 
 /**
  * @Auther: HeChao
- * @Date: 2021/9/21 - 09 - 21 - 18:49
- * @Description: com.hc.Test06
+ * @Date: 2021/9/22 - 09 - 22 - 9:37
+ * @Description: com.hc.Test09
  * @version: 1.0
  */
 public class Person {
-    //属性
+    String name;
+    int age;
 
-    //set get 方法
-
-    //构造器
-
-    //方法
-    private Person eat(){
-        System.out.println("我要吃饭");
-        return new Person();
+    public Person() {
     }
-    public void sleep(){
-        System.out.println("我要睡觉");
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 }
